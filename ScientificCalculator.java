@@ -12,8 +12,8 @@ public class ScientificCalculator implements ActionListener {
     JButton b4, b5, b6, bMul, bDel;
     JButton b1, b2, b3, bSub, bEq;
     JButton b0, bDot, bPlus, bNeg;
-    private double num1 = 0;
-    // JOHN
+    public double num1 = 0;
+
     private String operator = "";
     private boolean startNewNumber = true;
 
@@ -44,26 +44,36 @@ public class ScientificCalculator implements ActionListener {
 
         bSin = new JButton("sin");
         bSin.setBounds(20, 120, 65, 40);
+        bSin.setBackground(new Color(255, 200, 150));
         bCos = new JButton("cos");
         bCos.setBounds(90, 120, 65, 40);
+        bCos.setBackground(new Color(255, 200, 150));
         bTan = new JButton("tan");
         bTan.setBounds(160, 120, 65, 40);
+        bTan.setBackground(new Color(255, 200, 150));
         bLog = new JButton("log");
         bLog.setBounds(230, 120, 65, 40);
+        bLog.setBackground(new Color(255, 200, 150));
         bLn = new JButton("ln");
         bLn.setBounds(300, 120, 65, 40);
+        bLn.setBackground(new Color(255, 200, 150));
 
         bSqrt = new JButton("√");
         bSqrt.setBounds(20, 165, 65, 40);
+        bSqrt.setBackground(new Color(255, 200, 150));
 
         bPower = new JButton("xʸ");
         bPower.setBounds(90, 165, 65, 40);
+        bPower.setBackground(new Color(255, 200, 150));
         bSquare = new JButton("x²");
         bSquare.setBounds(160, 165, 65, 40);
+        bSquare.setBackground(new Color(255, 200, 150));
         bFact = new JButton("n!");
         bFact.setBounds(230, 165, 65, 40);
+        bFact.setBackground(new Color(255, 200, 150));
         bPi = new JButton("π");
         bPi.setBounds(300, 165, 65, 40);
+        bPi.setBackground(new Color(255, 200, 150));
 
         b7 = new JButton("7");
         b7.setBounds(20, 220, 65, 50);
@@ -94,13 +104,10 @@ public class ScientificCalculator implements ActionListener {
         bMul = new JButton("×");
         bMul.setBounds(230, 275, 65, 50);
         bMul.setBackground(new Color(255, 200, 200));
-        // bMul = createButton("×", 230, 275, 65, 50, new Color(255, 200, 200));
         bDel = new JButton("DEL");
         bDel.setBounds(300, 275, 65, 50);
         bDel.setBackground(new Color(255, 200, 150));
-        // bDel = createButton("DEL", 300, 275, 65, 50, new Color(255, 200, 150));
 
-        // b1 = createButton("1", 20, 330, 65, 50, Color.WHITE);
         b1 = new JButton("1");
         b1.setBounds(20, 330, 65, 50);
         b1.setBackground(Color.WHITE);
